@@ -1,0 +1,32 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+
+% Set default language
+\providecommand{\currlang}{english}
+
+% Packages
+\usepackage[\currlang]{babel}   % Proper hyphenation
+
+% Download pictures
+\write18{./get-assets.sh}
+
+% Setup titlepage data
+\iflanguage{english}{
+    \title{Sort your thoughts with Lojban!}
+    \date{September 9, 2022}
+    \author{Alessio Artoni}
+}{
+    \title{zo'e ganzu lo su'u te do sidbo kei ku zo'e lo su'u lojban tavla kei ku}
+    \date{September 9, 2022}
+    \author{la .artos.}
+}
+
+\bibliographystyle{IEEEtran}
+
+\begin{document}
+    \maketitle
+
+    \input{sections/presentation}
+
+    \bibliography{refs}
+\end{document}
