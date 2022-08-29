@@ -1,0 +1,73 @@
+\section{Lojban properties}
+\begin{frame}{Nice properties you have there}
+    Lojban is a \textbf{logical}, \textbf{constructed}, \textbf{syntactically unambiguous} human language. It is fluently spoken by about 12--20 people~\cite{lojban:speakers}.
+
+    The name ``Lojban'' itself is a compound formed from \emph{loj} and \emph{ban}, which are short forms of \emph{logji} (logic) and \emph{bangu} (language).
+\end{frame}
+
+\begin{frame}{Constructed, logical, unambiguous}
+    \begin{itemize}
+        \item \textbf{constructed}: that is, artificial, as opposed to a \textbf{natural language}.
+        \item \textbf{syntactically unambiguous}: .
+        \item \textbf{logic}: based on \textbf{predicate logic}, the only notable ones are Lojban and its predecessor: \textbf{Loglan}.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{What's a language?}
+    A \textbf{language} shouldn't be confused with the way we express it, that means that \textbf{signing} isn't a language (and no, you can't sign in Lojban yet~\cite{lojban:signing}).
+\end{frame}
+
+\begin{frame}{Constructed languages}
+    % From here we already know a lot of things:
+    %   - we are talking about a human language;
+    %   - we are talking about a language that has been engineered for a specific purpose.
+    In linguistics a \textbf{natural language} is any language that has evolved naturally in humans through \textbf{use} and \textbf{repetition} without conscious planning or premeditation (e.g., English, Chinese).
+    % In linguistica, un linguaggio naturale è un linguaggio evoluto naturalmente negli umani attraverso l'uso e la ripetizione non pianificata (e.g., English, Chinese).
+
+    Natural languages have nothing to do with non-human intraspecific and interspecific communication (e.g., biocommunication).
+
+    Examples of \textbf{constructed languages} include programming languages, Esperanto and Klingon.
+    % We should have a Klingon speaker in the public
+\end{frame}
+
+\begin{frame}{Syntactically unambiguous}
+    For each proposition we can build one and only \textbf{one parsing tree}.
+    % As opposed to ordinary languages where you usually have a forest of parsing trees
+
+    This is different from \textbf{lexical ambiguity} which pertains to a word or phrase having more than meaning in the language.
+    % Lojban does prevent lexical ambiguity at word level but not at phrase level
+
+    Wanna see some examples?
+\end{frame}
+
+\begin{frame}{Is it syntactically ambiguous?}
+    \begin{table}[h]
+        \begin{tabular}{lcc}
+        & T & F \\
+        \only<1>{``Cook, cook!'' & $\square$ & $\square$ \\}
+        \only<2->{``Cook, cook!'' & $\square$ & $\boxtimes$ \\}
+        \only<3>{``He ate the cookies on the couch'' & $\square$ & $\square$ \\}
+        \only<4->{``He ate the cookies on the couch'' & $\boxtimes$ & $\square$ \\}
+        \only<5>{``I saw the man with the telescope'' & $\square$ & $\square$\\}
+        \only<6->{``I saw the man with the telescope'' & $\boxtimes$ & $\square$ \\}
+        \only<7>{``She is an English teacher'' & $\square$ & $\square$ \\}
+        \only<8->{``She is an English teacher'' & $\boxtimes$ & $\square$ \\}
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Is it syntactically ambiguous? II}
+    \begin{table}[]
+        \begin{tabular}{lcc}
+        & T & F \\
+        \only<1>{``You'll need an entrance fee of \$10 or &&\\
+        your voucher and your drivers' license'' & $\square$ & $\square$ \\}
+        \only<2->{``You'll need an entrance fee of \$10 or &&\\
+        your voucher and your drivers' license'' & $\boxtimes$ & $\square$ \\}
+        \only<3>{``The rabbi married my sister'' & $\square$ & $\square$ \\}
+        \only<4->{``The rabbi married my sister'' & $\square$ & $\boxtimes$ \\}
+        \only<5>{``Pretty little girls' school'' & $\square$ & $\square$ \\}
+        \only<6->{``Pretty little girls' school'' & $\square$ & $\boxtimes$ \\}
+        \end{tabular}
+    \end{table}
+\end{frame}
